@@ -1,0 +1,24 @@
+.footer {
+    background-color: blue;
+
+    margin-top: 200px;  /* margin separa un elemento de los demás */
+    margin-bottom: 250px;
+    margin-right: 40px;
+    margin-left: 20px;
+    /*       T  -  R  -  B -   L */
+    margin: 200px 40px 250px 20px;
+    /*      ejeY - ejeX */
+    margin: 200px 40px;
+    /*       YX */
+    margin: 40px;
+    
+    /* padding-top: 200px; padding separa el contenido del borde de su contenedor. Todo lo que se puede hacer con margin se puede hacer con padding */
+    padding: 20px;
+
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+    border: 2px dashed white;
+
+    text-align: center;
+}
