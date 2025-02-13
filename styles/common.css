@@ -25,8 +25,47 @@ a {
     opacity: 1; /* afecta al contenido */
 }
 
+* {
+    box-sizing: border-box;
+}
+
 p {
     margin: 0;
     margin-bottom: 1rem;
+}
+
+
+a.hide {
+    display: none; /* Esta opcion oculta el boton totalmente, incluso desaparece el espacio que ocupaba
+    visibility: hidden;  Esta opcion hace el boton invisible, de forma que el hueco que ocupaba aparece vacio */
+}
+
+
+/* MEDIA QUERYS */
+/* entre parentesis va la condicion que se tiene que dar para que sucedan los cambios de dentro del media query */
+@media screen and (width > 768px) {
+    a.hide {
+        display: block;
+    }
+}
+
+@media print {
+   /*  
+   body header.header {
+        display: none;
+    }
+    body footer.footer {
+        display: none;
+    }
+    body section.banner {
+        display: none;
+    } 
+    */
+
+    body {
+        header.header, footer.footer, section.banner, video, img {
+            display: none;
+        }
+    }
 }
 

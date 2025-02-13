@@ -4,6 +4,10 @@
     /* Con estas dos cosas, el header baja contigo cuando bajas en la pagina */;
     background-color: var(--bg-color);
     z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 
     img {
         width: 20%;
@@ -16,5 +20,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 10px;
 }
 
