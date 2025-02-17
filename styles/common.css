@@ -29,6 +29,10 @@ a {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
 p {
     margin: 0;
     margin-bottom: 1rem;
@@ -42,13 +46,25 @@ a.hide {
 
 
 /* MEDIA QUERYS */
+/* Esta media query juega con las features; son las mas comunes */
 /* entre parentesis va la condicion que se tiene que dar para que sucedan los cambios de dentro del media query */
-@media screen and (width > 768px) {
+@media /* screen and */ (width > 768px) { /* break points: puntos donde nuestro diseño va a cambiar. En 768px va a ser cuando va a cambiar nuestra interfaz de mobile a desktop */
     a.hide {
         display: block;
     }
 }
 
+/*@media (prefers-color-scheme: light) {  
+Permite que se use el tema que se tenga guardado en el browser. Aqui se guardan los cambios que se daran en el caso de que tengamos el tema claro activo 
+    :root {
+        --bg-color: #fff;
+        --main-text-color: #000;
+    }
+}
+*/
+
+
+/* Esta media query juega con el tipo. Señalamos que parte del css vamos a querer que no se imprima */
 @media print {
    /*  
    body header.header {

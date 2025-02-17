@@ -25,3 +25,13 @@
         }
     }
 }
+
+@media screen and (width > 768px) {
+    .info {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 auto; /* asi puedo poner en el centro el contenedor .info, no su contenido */
+    }
+}

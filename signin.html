@@ -6,7 +6,85 @@
     <title>Codeflix | signin</title>
 </head>
 <body>
-    <h1>Codeflix signin.html</h1>
-    <a href="./">Home</a> <!-- Es lo mismo que poner ./index.html -->
+    <h1>signin.html</h1>
+    <!--<a href="./">Home</a>  Es lo mismo que poner ./index.html -->
+    <form action="./registro" method="post"> <!-- action es la ubicacion donde vamos a mandar la info que vamos a recopilar en el formulario 
+        method: "post" hace que no aparezcan en la url ningun elemento del formulario-->
+        <div>
+            <label for="mail">Add yout email</label> <!-- en el for se pone el mismo nombre que le hemos puesto al id del input -->
+            <!-- 
+            Tres pasos que hay que hacer SIEMPRE que usemos inputs:
+             1. type
+             2. name
+             3. id
+             -->
+            <input type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
+            <!--en value iria el email del usuario para que no lo tenga que escribir cada vez que ingrese-->
+        </div>
+
+        <div>
+            <label for="password">Add your password</label>
+            <input type="password" name="password" id="password" placeholder="add your pasword">
+        </div>
+
+        <div>
+            <label for="tel">Enter your phone number</label>
+            <input type="tel" name="telephone" id="tel" autocomplete="off">
+        </div>
+
+        <div>
+            <label for="profile">Choose a profile picture</label>
+            <input type="file" name="profile" id="profile" accept="image/png">
+        </div>
+
+        <!-- <fieldset>
+            Permite agrupar varios inputs que se relaciona con un contenido especifico
+            <legend>Fav programming language</legend>
+            <label for="js">JS</label>
+            <input type="radio" name="fav" id="js" value="js" checked>
+
+            <label for="python">Python</label>
+            <input type="radio" name="fav" id="python" value="python">
+        </fieldset> -->
+        <!--type "radio" sirve para cuando queremos seleccionar solo una de las opciones. Para que funcione, el "name" tiene que ser el mismo en todos los inputs-->
+
+        <!-- <fieldset>
+            <legend>Want to learn</legend>
+            <label for="jsc">JS</label>
+            <input type="checkbox" name="learn" id="jsc" value="js">
+
+            <label for="pythonc">Python</label>
+            <input type="checkbox" name="learn" id="pythonc" value="python">
+
+            <label for="netc">.Net</label>
+            <input type="checkbox" name="learn" id="netc" value="net">
+        </fieldset> -->
+
+        <div>
+            <label for="bio">User bio</label>
+            <textarea name="bio" id="bio" rows="6" placeholder="Add your bio"></textarea>
+        </div>
+
+        <button type="button">click</button>
+
+        <div>
+            <label for="remember">Remember me</label>
+            <input type="checkbox" name="remember" id="remember">
+        </div>
+
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="es" selected>España</option>
+                <option value="co">Colombia</option>
+                <option value="us">USA</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="reset" value="Reset">
+            <button type="submit">Guardar</button>
+        </div>
+    </form>
 </body>
 </html>
