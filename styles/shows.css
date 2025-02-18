@@ -1,0 +1,25 @@
+figure {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+
+    img {
+        width: 100%;
+    }
+
+}
+/* auto-fit intenta ocupar todo el espacio disponible y reparte los elementos en funcion del dato que pongamos despues de la coma del repeat. Ej: repeat(auto-fit, minmax(160px, 1fr))
+auto-fit hace lo mismo, pero no ocupa todo el espacio disponible. Si entra otro elemento, deja ese hueco vacio.*/
+
+/* @media screen and (width > 768px) {
+    .list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
